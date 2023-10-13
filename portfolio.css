@@ -1,0 +1,323 @@
+.incomplete{
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  position:relative;
+  z-index: 1;
+  color: #555;
+}
+
+.incomplete img{
+  position: absolute;
+  left: -134px;
+  bottom: 1px;
+  top: 1px;
+  right: 100px;
+  opacity: 50%;
+  width: 40%;
+}
+
+
+
+body{
+  margin: 0px;
+  padding: 0px;
+  background: linear-gradient(rgb(228, 228, 228), rgb(233, 233, 233));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Questrial','sans-serif';
+  color: white;
+  
+  
+ 
+}
+
+
+table, td, th {
+    border: 1px solid black;
+   
+    
+  }
+
+
+  table{
+    
+    border-collapse: collapse;
+    background-color: #555;
+   
+    color: white;
+  }
+
+
+
+    
+  
+
+  .table img{
+    max-width: 100px;
+    align-items: center;
+  }
+
+ .pic {
+  background-color: rgb(126, 126, 126);
+ }
+
+
+  .table{
+    
+    position: relative;
+    
+    align-items: center;
+    
+    
+  }
+
+  .tb{
+    border: 10px solid rgb(216, 216, 216);
+    box-shadow: 0px, 2px, 5px, rgba(0,0,0,0.5);
+    
+  }
+
+
+  h3{
+    position: relative;
+    top: 30px;
+  }
+  .par{
+    position: relative;
+    top: 40px
+  }
+  .poem{
+    font-family: 'poppins', 'sans-serif';
+  text-align: center;
+  color: rgb(255, 245, 253);
+  border-radius: 50%;
+  padding: 10px 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  background: linear-gradient(rgb(255, 95, 108),rgb(185, 63, 73));
+  width: 500px;
+  height: 500px;
+    margin-top: 50px;
+  margin-right: 700px;
+  font-size: large;
+  
+  box-shadow: 0 0px 30px rgba(255, 105, 105, 0.8);
+
+  box-sizing: content-box;
+  }
+  
+  .list,h2 ,li{
+    position: relative;
+    left: 80px;
+    top: 80px;
+    font-size: 20px;
+  }
+
+  .list{
+    display: flex;
+    flex-direction: column;
+    
+    left: 300px;
+    top: -200px;
+    
+    
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(rgba(32, 32, 32,0.9), rgba(22, 22, 22,0.9));
+  box-shadow: 0 0px 30px rgba(15, 15, 15, 0.8);
+
+ 
+  }
+
+
+
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+  .table h2{
+   position: relative;
+   left: 300px;
+   top: -10px;
+  }
+  
+
+ .table td{
+  text-align: left;
+  padding: 20px;
+ } 
+
+ .table th{
+  text-align: left;
+  padding: 20px;
+  background-color: rgb(255, 95, 108);
+ }
+
+.links a{
+  color: rgb(233, 50, 50);
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.links li{
+  margin: auto;
+  text-align: left;
+}
+
+
+
+.bg{
+  position:absolute;
+  opacity: 50%;
+}
+
+.bo{
+ 
+  
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+	
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+ 
+ 
+
+}
+.bo img{
+  display: flexbox;
+  
+  height: fit-content;
+ 
+  width: fit-content;
+  
+opacity: 10%;
+align-items: center;
+
+
+}
+
+.bg img{
+  max-width: 1000px;
+}
+
+#pet{
+  max-width: 80px;
+  position: absolute;
+  animation: pet 5s ease-in-out infinite;
+}
+
+
+
+@keyframes pet{
+  0%{
+    transform: translate(-450px,150px); opacity: 0%;
+  }
+  50%{
+     opacity: 80%;
+  }
+
+  100%{
+    transform: translate(-450px,500px); opacity: 0%;
+  }
+}
+
+.navbar{
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  top: -100px;
+  display: flex;
+  list-style-type: none;
+  
+  
+}
+
+.navbar li{
+  display: inline;
+}
+.navbar a{
+  text-decoration: none;
+  display: flex;
+  margin: 0 25px;
+  color: rgb(0, 0, 0);
+  position: relative;
+  right: 100px;
+  bottom: 30px;
+  
+}
+
+.navbar p[id="heading"]{
+  color: black;
+  position: relative;
+  right: 300px;
+  bottom: 65px;
+  font-family: 'Raleway';
+  font-weight: bolder;
+  font-size: 28px;
+}
+
+.navbar p[id="about"]{
+  display: flex;
+  margin: 0 25px;
+  color: rgb(255, 184, 29);
+  position: relative;
+  right: 100px;
+  bottom: 30px;
+}
+
+.navbar a:hover{
+  color: #9c9c9c;
+  border-bottom: 2px rgba(0, 0, 0, 0.3) solid;  
+  animation: lh 0.7s ease-in;
+}
+
+.navbar p[id="about"]:hover{
+  cursor: pointer;
+  color: #5dccff;
+  border-bottom: 2px rgba(0, 0, 0, 0.3) solid;
+  animation: ah 0.7s ease-in;
+}
+
+.navbar p[id="heading"]:hover{
+  cursor: pointer;
+  border-bottom: 2px rgb(19,19,19) solid;
+  animation: hd 0.7s ease-in;
+  
+}
+
+@keyframes hd{
+  0%{
+    border-bottom: 2px rgba(0, 0, 0,0) solid;
+  }
+
+  100%{
+    border-bottom: 2px rgb(19, 19, 19) solid;
+  }
+}
+
+@keyframes lh{
+  0%{
+    border-bottom: 2px rgba(0, 0, 0, 0) solid;  
+  }
+
+  100%{
+    border-bottom: 2px rgba(0, 0, 0, 0.3) solid;  
+  }
+}
+
+@keyframes ah{
+  0%{
+    border-bottom: 2px rgba(0, 0, 0, 0) solid;
+  }
+
+  100%{
+    border-bottom: 2px rgba(0, 0, 0, 0.3) solid;
+  }
+}
+
