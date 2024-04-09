@@ -1,0 +1,415 @@
+html{
+  height: 100%;
+  scroll-behavior: smooth;
+
+}
+
+h1{
+  color: black;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  font-family: 'Questrial','sans-serif';
+  color: white;
+  list-style-type: none;
+  align-items: center;
+}
+
+.container{
+ margin: auto;
+}
+
+.box{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  display: flex;
+  padding-top: 1%;
+  width: 100%;
+  justify-content: center; 
+  background-color: rgba(255,255, 255, 0.8);
+  z-index: 1;
+  box-shadow: 0 40px 40px rgba(255, 255, 255, 0.5);
+  transition:  0.8s;
+}
+
+
+.navbar{
+  position: relative;
+  width: 100%;
+  margin-left: 33%;
+  margin-right: 33%;
+  border-bottom: rgb(143, 143, 143) solid 1px;
+  padding: 0% 2%;
+  padding-bottom: 0.25%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+.navbar a{
+  text-align: center;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.navbar a[id="heading"]{
+  color: black;  
+  font-family: 'Raleway';
+  font-weight: bolder;
+  font-size: 28px;
+  
+}
+
+.navbar a[id="about"]{
+  color: rgb(255, 184, 29);
+}
+
+.navbar a:hover{
+  color: #9c9c9c;
+  border-bottom: 2px rgba(0, 0, 0, 0.3) solid;  
+  animation: lh 0.7s ease-in;
+}
+
+.navbar a[id="about"]:hover{
+  cursor: pointer;
+  color: #5dccff;
+  border-bottom: 2px rgba(0, 0, 0, 0.3) solid;
+  animation: ah 0.7s ease-in;
+}
+
+.navbar a[id="heading"]:hover{
+  cursor: pointer;
+  border-bottom: 2px rgb(19,19,19) solid;
+  animation: hd 0.7s ease-in;
+  
+}  
+
+@media only screen and (max-width: 1200.96px) {
+  .navbar{
+    border-bottom: 1px rgba(255, 255, 255, 0) solid;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+}
+
+@media only screen and (max-width: 767.96px) {
+  .navbar{
+    border-bottom: 1px rgba(255, 255, 255, 0) solid;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+
+
+@media only screen and (max-width: 575.96px) {
+  .navbar{
+    border-bottom: none;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+
+@media only screen and (max-width: 767.96px) {
+  a{
+    font-size: 13px;
+    line-height: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 575.96px) {
+  a{
+    font-size: 12px;
+    line-height: 1.2rem;
+  }
+
+}@media only screen and (max-width: 767.96px) {
+  #heading{
+    font-size: 18px;
+    line-height: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 575.96px) {
+  #heading{
+    font-size: 15px;
+    line-height: 1.2rem;
+  }
+}
+
+
+@keyframes hd{
+  0%{
+    border-bottom: 2px rgba(0, 0, 0,0) solid;
+  }
+
+  100%{
+    border-bottom: 2px rgb(19, 19, 19) solid;
+  }
+}
+
+@keyframes lh{
+  0%{
+    border-bottom: 2px rgba(0, 0, 0, 0) solid;  
+  }
+
+  100%{
+    border-bottom: 2px rgba(0, 0, 0, 0.3) solid;  
+  }
+}
+
+@keyframes ah{
+  0%{
+    border-bottom: 2px rgba(0, 0, 0, 0) solid;
+  }
+
+  100%{
+    border-bottom: 2px rgba(0, 0, 0, 0.3) solid;
+  }
+}
+.intro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2%;
+  border-bottom: rgb(143, 143, 143) solid 1px;
+  margin-left: 3%;
+  margin-right: 3%;
+  position: relative;
+  min-height: 100vh;
+}
+
+@media only screen and (max-width: 767.96px) {
+  .intro{
+    min-height: 0vh;
+  }
+}
+
+
+.intro img{
+  width: 500px;
+  position: relative;
+  margin-top: 10%;;
+  border-radius: 50%;  
+  object-fit: cover;
+  right: 5%;
+  z-index: -3;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+@media only screen and (max-width: 767.96px) {
+  .intro img{
+    width: 300px;
+    line-height: 25px;
+    animation:  3s ease-in;
+  }
+}
+
+@media only screen and (max-width: 575.96px) {
+  .intro img {
+    width: 150px;
+    line-height: 1.2rem;
+  }
+}
+
+
+
+.introtext{
+  display: flex;
+  flex-direction: column;
+  z-index: -4;
+}
+
+.intro h1{
+  color: orange;
+}
+
+.intro h2{
+  color: rgb(0, 0, 0);
+}
+
+/*About me*/
+.about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+  border-bottom: rgb(143, 143, 143) solid 1px;
+
+}
+
+.about h1{
+padding: 1% 1%;
+
+border-radius: 5%;
+}
+
+.about .abtinfo{
+  width: 50%;
+  background-color: #f9f9f9;
+  border-radius: 5%;
+  padding: 4% 2%;
+}
+
+@media only screen and (max-width: 767.96px) {
+  .about .abtinfo{
+    width: 95%;
+    font-size: 12px;
+  }
+}
+
+/*About me*/
+
+.education{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  text-align: center;
+  padding-bottom: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.education h1{
+padding: 1% 1%;
+
+border-radius: 5%;
+}
+
+.education .edinfo{
+  display: flex;
+}
+
+.education li{
+  padding-left: 2%;
+  padding-right: 2%;
+  border-right: rgb(143, 143, 143) solid 1px;
+}
+
+li::marker {
+  font-size: 1.5rem;
+  color: orange;
+  
+}
+.education p{
+  color: black;
+}
+
+@media only screen and (max-width: 767.96px) {
+  .education .edinfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 767.96px) {
+  .education li {
+   border-right: none;
+   border-bottom: rgb(143, 143, 143) solid 1px;
+  }
+}
+
+@media only screen and (max-width: 767.96px) {
+  li[name="thames"]{
+   border-bottom: none;
+  }
+}
+
+
+li[name="thames"]{
+  border-right: none;
+  width: 33.34%;
+}
+
+li[name="avn"]{
+  width: 33.34%;
+}
+
+li[name="spa"]{
+  width: 33.34%;
+}
+
+.footer{
+  border-top: rgb(143, 143, 143) solid 1px;
+  margin-left: 3%;
+  margin-right: 3%;
+  display: flex;
+  align-items: center;
+  min-height: 10%;
+  max-height: 10%;
+}
+
+.footer h1{
+  margin-left: 2%;
+}
+
+.footer a{
+  
+  
+  text-decoration: none;  
+  color: rgb(0, 0, 0);
+}
+
+.handles{
+  display: flex;
+}
+
+.handles li{
+  
+  margin-left: 20%;
+  border-right: #cacaca solid 1px;
+  padding-right: 10%;
+}
+
+#email{
+  margin-left: 300%;
+}
+
+.footer a:hover{
+  color: #9c9c9c;
+  
+}
+
+@media only screen and (max-width: 767.96px) {
+  h1{
+    font-size: 18px;
+    line-height: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 575.96px) {
+  h1{
+    font-size: 15px;
+    line-height: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 767.96px) {
+  h2{
+    font-size: 18px;
+    line-height: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 575.96px) {
+  h2{
+    font-size: 10px;
+    line-height: 1.2rem;
+  }
+}
