@@ -1,0 +1,102 @@
+html{
+    height: 100%;
+  }
+  
+  body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgb(228, 228, 228), rgb(233, 233, 233));
+    font-family: 'Questrial','sans-serif';
+    color: white;
+    list-style-type: none;
+    align-items: center;
+  }
+  
+  .container{
+   margin: auto;
+  }
+  
+  .box{
+    position: fixed;
+    display: flex;
+    top: 2%;
+    width: 100%;
+    justify-content: center;
+  }
+  .navbar{
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+    
+    align-items: center;
+  }
+  .navbar a{
+    text-align: center;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+  
+  .navbar a[id="heading"]{
+    color: black;  
+    font-family: 'Raleway';
+    font-weight: bolder;
+    font-size: 28px;
+    
+  }
+  
+  .navbar a[id="about"]{
+    color: rgb(255, 184, 29);
+  }
+  
+  .navbar a:hover{
+    color: #9c9c9c;
+    border-bottom: 2px rgba(0, 0, 0, 0.3) solid;  
+    animation: lh 0.7s ease-in;
+  }
+  
+  .navbar a[id="about"]:hover{
+    cursor: pointer;
+    color: #5dccff;
+    border-bottom: 2px rgba(0, 0, 0, 0.3) solid;
+    animation: ah 0.7s ease-in;
+  }
+  
+  .navbar a[id="heading"]:hover{
+    cursor: pointer;
+    border-bottom: 2px rgb(19,19,19) solid;
+    animation: hd 0.7s ease-in;
+    
+  }  
+  
+  @keyframes hd{
+    0%{
+      border-bottom: 2px rgba(0, 0, 0,0) solid;
+    }
+  
+    100%{
+      border-bottom: 2px rgb(19, 19, 19) solid;
+    }
+  }
+  
+  @keyframes lh{
+    0%{
+      border-bottom: 2px rgba(0, 0, 0, 0) solid;  
+    }
+  
+    100%{
+      border-bottom: 2px rgba(0, 0, 0, 0.3) solid;  
+    }
+  }
+  
+  @keyframes ah{
+    0%{
+      border-bottom: 2px rgba(0, 0, 0, 0) solid;
+    }
+  
+    100%{
+      border-bottom: 2px rgba(0, 0, 0, 0.3) solid;
+    }
+  }
+  
+  
+  
