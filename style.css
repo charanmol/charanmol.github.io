@@ -537,7 +537,7 @@ li[name="spa"]{
   overflow: hidden;
   white-space: nowrap;
   margin: 0;
-  animation: typing2 4s steps(26) forwards, blink 1s step-end infinite;
+  animation: typing2 4s steps(26) forwards, blink 1s 4s step-end infinite;
   
 }
 
@@ -563,6 +563,7 @@ li[name="spa"]{
 }
 
 @keyframes blink{
+  
   50%{
     border-color: transparent;
   }
