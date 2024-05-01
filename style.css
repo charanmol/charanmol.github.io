@@ -53,7 +53,7 @@ body{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  
+    
 }
 
 .navbar a{
@@ -234,11 +234,16 @@ body{
 }
 
 .intro h1{
+  font-size: 50px;
   color: orange;
 }
 
 .intro h2{
   color: rgb(0, 0, 0);
+}
+
+.intro p{
+  font-size: 25px;
 }
 
 /*About me*/
@@ -501,8 +506,9 @@ li[name="spa"]{
   overflow: hidden;
   white-space: nowrap;
   border-right: 1px solid;
+  margin-top: 0;
   margin-bottom: 0;
-  animation: typing 2s steps(17) forwards;
+  animation: typing 1.5s steps(17) forwards;
 
 }
 
@@ -531,7 +537,7 @@ li[name="spa"]{
   overflow: hidden;
   white-space: nowrap;
   margin: 0;
-  animation: typing2 5s steps(26) forwards, blink 1s step-end infinite;
+  animation: typing2 4s steps(26) forwards, blink 1s step-end infinite;
   
 }
 
