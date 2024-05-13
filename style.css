@@ -30,7 +30,7 @@ body{
 
 .container{
  margin: auto;
- background-color: rgb(24, 24, 24);
+ background-color: rgb(57, 57, 57);
 }
 
 .firstpage{
@@ -249,7 +249,7 @@ body{
   font-size: 20px;
   margin-bottom: 5px;
   padding: 2% 5%;
-  border: 2px solid rgb(255, 184, 29);;
+  border: 2px solid rgb(255, 184, 29);
   border-radius: 5%;
   border-bottom-right-radius: 30%;
   color: rgb(255, 184, 29);  
@@ -364,6 +364,7 @@ body{
   }
 }
 
+
 @media only screen and (max-width: 575.96px) {
   .intro p {
     font-size: 10px;
@@ -371,6 +372,21 @@ body{
   }
 }
 
+@media only screen and (max-width: 767.96px) {
+  .intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 767.96px) {
+  .introtextbox{
+    justify-self: center;
+    align-self: center;  
+    align-items: center;
+  }
+}
 
 .projects{
   border-top: rgb(143, 143, 143) solid 1px;
@@ -418,6 +434,259 @@ body{
   color: rgb(131, 131, 131);
  
   
+}
+
+.skills{
+    border-top: rgb(143, 143, 143) solid 1px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.skills p{
+  font-size: 15px;
+}
+
+#skills{
+  text-align: center;
+}
+
+.skilllist{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+
+.skilllist2{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+
+.skills img{
+  width: 30px;
+  object-fit: contain;
+  
+}
+
+.apimg{
+  width: 35px;
+  margin-right: 5px;
+}
+
+.AP{
+  align-items: center;
+  width: 20%;
+  display: flex;
+  border: 1px solid rgb(70, 175, 255);
+  background-color: rgb(46, 52, 62);
+  border-radius: 4%;
+  padding: 0 1%;  
+ 
+}
+
+
+
+.AP p{
+  font-weight: bold;
+  color: rgb(235, 235, 235);
+  padding: 5% 0;
+  padding-right: 15%;
+
+}
+
+.AP:hover  img{
+  width: 35px;
+  transition: 0.2s ease-in-out;
+}
+
+.AI{
+  
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 20%;
+  display: flex;
+  border: 1px solid rgb(70, 175, 255);
+  background-color: rgb(46, 52, 62);
+  border-radius: 4%;
+  padding: 0 1%;
+  align-items: center;
+}
+
+.AI p{
+  font-weight: bold;
+  color: rgb(235, 235, 235);
+  padding: 5% 0;
+
+}
+
+.AI:hover  img{
+  width: 35px;
+  transition: 0.2s ease-in-out;
+}
+
+
+.APR{
+   
+  width: 20%;
+  align-items: center;
+  display: flex;
+  border: 1px solid rgb(70, 175, 255);
+  background-color: rgb(46, 52, 62);
+  border-radius: 4%;
+  padding: 0 1%;
+  
+}
+
+.APR p{
+  font-weight: bold;
+  color: rgb(235, 235, 235);
+  padding: 5% 0;
+
+}
+
+.APR:hover  img{
+  width: 35px;
+  transition: 0.2s ease-in-out;
+}
+
+.html{
+  
+  width: 20%;
+  align-items: center;
+  display: flex;
+  border: 1px solid rgb(70, 175, 255);
+  background-color: rgb(46, 52, 62);
+  border-radius: 4%;
+  padding: 0 1%;
+  
+}
+
+.html p{
+  padding: 5% 0;
+  font-weight: bold;
+  color: rgb(235, 235, 235);
+}
+
+.html:hover  img{
+  width: 35px;
+  transition: 0.2s ease-in-out;
+}
+
+
+.css{
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 20%;
+  align-items: center;
+  display: flex;
+  border: 1px solid rgb(70, 175, 255);
+  background-color: rgb(46, 52, 62);
+  border-radius: 4%;
+  padding: 0 1%;
+  
+}
+
+.css p{
+  font-weight: bold;
+  color: rgb(235, 235, 235);
+  padding: 5% 0;
+
+}
+
+.css:hover  img{
+  width: 35px;
+  transition: 0.2s ease-in-out;
+}
+
+.js{
+  
+  width: 20%;
+  align-items: center;
+  display: flex;
+  border: 1px solid rgb(70, 175, 255);
+  background-color: rgb(46, 52, 62);
+  border-radius: 4%;
+  padding: 0 1%;
+  
+}
+
+.js p{
+  font-weight: bold;
+  color: rgb(235, 235, 235);
+  padding: 5% 0;
+
+}
+
+.js:hover  img{
+  width: 35px;
+  transition: 0.2s ease-in-out;
+}
+
+@media only screen and (max-width: 767.96px) {
+  .skills p{
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 575.96px) {
+  .skills p {
+    font-size: 10px;
+    line-height: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 767.96px) {
+  .skills img {
+    width: 25px;
+  }
+}
+
+@media only screen and (max-width: 767.96px) {
+  .css:hover img, .js:hover img, .html:hover img, .APR:hover img, .AI:hover img, .AP:hover img  {
+    width: 30px;
+  }
+}
+
+@media only screen and (max-width: 575.96px) {
+  .skills img, .css:hover img, .js:hover img, .html:hover img, .APR:hover img, .AI:hover img, .AP:hover img  {
+    width: 20px;
+  }
+}
+
+@media only screen and (max-width: 575.96px) {
+   .css:hover img, .js:hover img, .html:hover img, .APR:hover img, .AI:hover img, .AP:hover img  {
+    width: 25px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .skilllist, .skilllist2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .AP, .AI, .APR, .html, .css, .js{
+    width: 40%;
+    margin-bottom: 2%;
+  }
+}
+
+@media only screen and (max-width: 767.96px) {
+  .apimg{
+    width: 30px;
+    margin-right: 1px;
+  }
+}
+
+@media only screen and (max-width: 575.96px) {
+  .apimg{
+    width: 25px;
+    margin-right: 3px;
+  }
 }
 
 .footer{
