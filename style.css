@@ -440,6 +440,9 @@ body{
   border-top: rgb(143, 143, 143) solid 1px;
   margin-left: 3%;
   margin-right: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #digart{
@@ -462,15 +465,38 @@ body{
 .tags{
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .tags p{
-  margin-top: 5px;
+  margin-top: 4px;
 }
 
 #digimg{
   display: flex;
   flex-direction: column;
+  height: 618px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  
+  padding-right: 10px;
+}
+
+ ::-webkit-scrollbar {
+  width: 5px;
+  
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(129, 129, 129);
+  border-radius: 20px;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(66, 66, 66);
+  border-radius: 20px;
 }
 
 #logoimg{
