@@ -50,3 +50,32 @@ function calcopacitynone(){
 
 }
  
+
+function digclick(){
+    document.getElementById("digimg").style.display="flex"
+    document.getElementById("socialimg").style.display="none"
+    document.getElementById("logoimg").style.display="none"
+    document.getElementById("dig").style.borderTop="1px solid white"
+    document.getElementById("social").style.borderTop="0px solid white"
+    document.getElementById("logo").style.borderTop="0px solid white"
+}
+
+function logoclick(){
+ document.getElementById("digimg").style.display="none"
+ document.getElementById("socialimg").style.display="none"
+ document.getElementById("logoimg").style.display="flex"
+ document.getElementById("logo").style.borderTop="1px solid white"
+ document.getElementById("dig").style.borderTop="0px solid white"
+ document.getElementById("social").style.borderTop="0px solid white"
+}
+
+function socialclick(){
+    document.getElementById("digimg").style.display="none"
+    document.getElementById("socialimg").style.display="flex"
+    document.getElementById("logoimg").style.display="none"
+    document.getElementById("social").style.borderTop="1px solid white"
+    document.getElementById("logo").style.borderTop="0px solid white"
+    document.getElementById("dig").style.borderTop="0px solid white"
+
+
+}

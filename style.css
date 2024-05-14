@@ -20,7 +20,7 @@ body{
   cursor: crosshair;
   margin: 0;
   padding: 0;
-  background-color: rgb(39, 39, 39);
+  background-color: rgb(20, 20, 20);
   font-family: 'Questrial','sans-serif';
   color: white;
   list-style-type: none;
@@ -30,7 +30,7 @@ body{
 
 .container{
  margin: auto;
- background-color: rgb(57, 57, 57);
+ background-color: rgb(0, 0, 0);
 }
 
 .firstpage{
@@ -434,6 +434,79 @@ body{
   color: rgb(131, 131, 131);
  
   
+}
+
+.digart{
+  border-top: rgb(143, 143, 143) solid 1px;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+#digart{
+  text-align: center;
+}
+
+.digart p{
+  font-size: 15px;
+}
+
+.digart p:hover, .dig:hover, .logo:hover, .social:hover{
+  color: rgb(216, 216, 216);
+  cursor: url('cursor/1x/crosswhi.png') 16.5 16.5, auto;
+}
+
+.digart img{
+  width: 309px;
+}
+
+.tags{
+  display: flex;
+  justify-content: center;
+}
+
+.tags p{
+  margin-top: 5px;
+}
+
+#digimg{
+  display: flex;
+  flex-direction: column;
+}
+
+#logoimg{
+  display: none;
+  flex-direction: column;
+}
+
+#socialimg{
+  flex-direction: column;
+  display: none;
+}
+
+#dig{
+  border-top: 1px solid white;
+}
+
+#logo{
+  border-top: 0px solid white;
+}
+
+#social{
+  border-top: 0px solid white ;
+}
+
+.row1, .row2, .row3, .row4, .row5{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.25%;
+}
+
+.mid{
+  margin: 0 0.25%;
+}
+
+.logo{
+  margin: 0 1%;
 }
 
 .skills{
