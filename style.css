@@ -458,9 +458,24 @@ body{
   cursor: url('cursor/1x/crosswhi.png') 16.5 16.5, auto;
 }
 
-.digart img{
+.digimg img{
   width: 309px;
 }
+
+.logoimg img{
+  width: 309px;
+}
+
+.socialimg img{
+  width: 309px;
+}
+
+#Shoppile-cart-dash{
+  height: 250px;
+  margin-top: 29.5px;
+  width: 500px;
+}
+
 
 .tags{
   display: flex;
