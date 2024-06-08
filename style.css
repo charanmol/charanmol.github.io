@@ -517,11 +517,25 @@ body{
 #logoimg{
   display: none;
   flex-direction: column;
+ 
+  height: 600px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  
+  padding-right: 10px;
 }
 
 #socialimg{
   flex-direction: column;
   display: none;
+
+  height: 618px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  
+  padding-right: 10px;
 }
 
 #dig{
