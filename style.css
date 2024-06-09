@@ -204,9 +204,15 @@ body{
   }
 }
 
+@media only screen and (min-height: 1080px) {
+  .intro, .firstpage{
+    min-height: 0vh;
+  }
+}
+
 
 .intro img{
-  width: 650px;
+  width: 600px;
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
@@ -216,6 +222,30 @@ body{
   position: relative;
   display: flex;
  justify-self: flex-end;
+}
+
+@media only screen and (max-width: 1000.96px) {
+  .intro{
+  
+   align-self: center;
+   justify-self: center;
+   min-height: 100vh;
+    
+  }
+}
+
+@media only screen and (max-width: 767.96px){
+  .intro{
+    min-height: 0vh;
+  }
+}
+
+
+@media only screen and (max-width: 1000.96px) {
+  .intro img{
+    width: 400px;
+    
+  }
 }
 
 
@@ -544,7 +574,7 @@ body{
   overflow-x: hidden;
   scroll-behavior: smooth;
   width: 80%;
-  
+  max-height: 80vh;
 }
 
 #socialimg{
@@ -576,10 +606,12 @@ body{
 }
 
 @media only screen and (max-width: 480px) {
-  #digimg{
+  #digimg, #socialimg, .digart{
+    width: 100%;
     height: auto;
     overflow: hidden;
     padding-right: 0px;
+    margin-left: 0;
 }
 }
 
