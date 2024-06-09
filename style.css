@@ -242,7 +242,7 @@ body{
   align-items: start;
   align-self: center;
   position: relative;
-  width: 500px;
+  
 }
 
 #hire{
@@ -459,11 +459,11 @@ body{
 }
 
 .digimg img{
-  width: 30%;
+  width: 33%;
 }
 
 .logoimg img{
-  width: 30%;
+  width: 33%;
 }
 
 .socialimg img{
@@ -479,21 +479,25 @@ body{
 }
 
 #banner{
-  width:80%;
+  width:99.5%;
 }
 #channel-art-1,#channel-art-2{
-  width: 40%;
+  width: 49.75%;
   
 }
 
 #thumbnail-1,#thumbnail-2,#thumbnail-3{
-  width: 26.666666667%;
+  width: 33%;
+}
+
+#mun-1,#mun-2{
+  width: 29.5%;
+  height: 85.42%;
 }
 
 #certificate{
-  margin-top: 2.5%;
-  width: 30%;
-  height: 80%;
+ 
+  width: 40%;
 }
 
 .tags{
@@ -513,8 +517,8 @@ body{
   overflow-y: scroll;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  
-  padding-right: 10px;
+  width: 80%;
+  padding-right: 0;
 }
 
  ::-webkit-scrollbar {
@@ -536,24 +540,21 @@ body{
 #logoimg{
   display: none;
   flex-direction: column;
-  height: 600px;
   overflow-y: scroll;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  width: 80%;
   
-  padding-right: 10px;
 }
 
 #socialimg{
   flex-direction: column;
   display: none;
-
-  height: 618px;
+  width: 80%;  
+  max-height: 90vh;
   overflow-y: scroll;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  
-  padding-right: 10px;
 }
 
 #dig{
@@ -574,14 +575,34 @@ body{
   margin-bottom: 0.25%;
 }
 
+@media only screen and (max-width: 480px) {
+  #digimg{
+    height: auto;
+    overflow: hidden;
+    padding-right: 0px;
+}
+}
 
 @media only screen and (max-width: 1000px) {
   #logoimg{
     height: auto;
+    overflow: hidden;
   
 }
 }
 
+@media only screen and (max-width: 870px) {
+  #socialimg{
+    height: auto;
+    overflow-y: hidden;
+}
+}
+
+@media only screen and (max-width: 480px) {
+  #digimg img{
+   width: 33.33333%;
+}
+}
 
 .mid{
   margin: 0 0.25%;
