@@ -28,6 +28,55 @@ body{
   
 }
 
+#preloader{
+background: #000 url('assets/preloader.webp') no-repeat center center;
+background-size: 5%;
+min-height: 100vh;
+width: 100%;
+z-index: 100; 
+align-items: center;
+justify-content: center;
+position: fixed;
+display: flex;
+animation: loader 5s;
+visibility: hidden;
+}
+
+#preloader p{
+  margin-top: 10%;
+  position: static;
+}
+
+#blinking-dots{
+  
+  animation: dots steps(4) 1.5s infinite;
+}
+
+@keyframes dots {
+ from{
+    opacity: 100%;
+  }
+
+  to{
+   opacity: 0%;
+    
+  }
+  
+}
+
+@keyframes loader {
+  0%{
+    visibility: hidden;
+  }
+  100%{
+    visibility: visible;
+  }
+}
+
+
+
+
+
 .container{
  margin: auto;
  background-color: rgb(0, 0, 0);
@@ -204,6 +253,14 @@ body{
   }
 }
 
+@media only screen and (min-width: 1000.96px) {
+  .intro img{
+    width: 400px;
+    
+  }
+}
+
+
 @media only screen and (min-height: 1080px) {
   .intro, .firstpage{
     min-height: 0vh;
@@ -305,6 +362,7 @@ body{
   margin-top: 0;
   margin-bottom: 0;
   animation: typing 1.5s steps(17) forwards;
+  animation-delay: 5s;
 
 }
 
@@ -331,7 +389,7 @@ body{
   white-space: nowrap;
   margin: 0;
   animation: typing2 4s steps(26) forwards, blink 1s 4s step-end infinite;
-  
+  animation-delay: 5s;
 }
 
 @keyframes typing2{
@@ -606,7 +664,7 @@ body{
 }
 
 @media only screen and (max-width: 480px) {
-  #digimg, #socialimg, .digart{
+  #digimg,#logoimg, #socialimg, .digart{
     width: 100%;
     height: auto;
     overflow: hidden;

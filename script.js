@@ -1,3 +1,26 @@
+var loader = getElementById('preloader');
+window.onload = function(){
+    document.getElementById("preloader").style.display = "none";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var beforeY= window.scrollY;
 
 
@@ -79,3 +102,5 @@ function socialclick(){
 
 
 }
+
+
