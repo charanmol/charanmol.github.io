@@ -459,23 +459,42 @@ body{
 }
 
 .digimg img{
-  width: 309px;
+  width: 30%;
 }
 
 .logoimg img{
-  width: 309px;
+  width: 30%;
 }
 
 .socialimg img{
-  width: 309px;
+  width: 25%;
+  
 }
 
 #Shoppile-cart-dash{
-  height: 250px;
-  margin-top: 29.5px;
-  width: 500px;
+  width: 40%;
+  height: 66.67%;
+  margin-top: 5%;
+
 }
 
+#banner{
+  width:80%;
+}
+#channel-art-1,#channel-art-2{
+  width: 40%;
+  
+}
+
+#thumbnail-1,#thumbnail-2,#thumbnail-3{
+  width: 26.666666667%;
+}
+
+#certificate{
+  margin-top: 2.5%;
+  width: 30%;
+  height: 80%;
+}
 
 .tags{
   display: flex;
@@ -490,7 +509,7 @@ body{
 #digimg{
   display: flex;
   flex-direction: column;
-  height: 618px;
+  max-height: 90vh;
   overflow-y: scroll;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -517,7 +536,6 @@ body{
 #logoimg{
   display: none;
   flex-direction: column;
- 
   height: 600px;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -555,6 +573,15 @@ body{
   justify-content: center;
   margin-bottom: 0.25%;
 }
+
+
+@media only screen and (max-width: 1000px) {
+  #logoimg{
+    height: auto;
+  
+}
+}
+
 
 .mid{
   margin: 0 0.25%;
