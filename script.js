@@ -1,16 +1,67 @@
-var loader = getElementById('preloader');
-window.onload = function(){
-    document.getElementById("preloader").style.display = "none";
+// function imghover(event){
+//     var id = event.target.id;
+//     var element = event.target;
+//    element.classList.add('blurred');
+//    element.classList.add('overlay');
+//    document.getElementById("text-view").style.display = "flex";
+//    var rect = element.getBoundingClientRect();
+//    var leftx = rect.left + window.scrollX;
+//    var topy = rect.top + window.scrollY;
+//    var rightx = rect.right + window.scrollX;
+//    var bottomy = rect.bottom + window.scrollY;
+//    console.log ('leftx:',leftx +'topy:', topy + 'rightx: ',rightx + 'bottomy:',bottomy);
+//    var imgcenterx= (leftx/2 + rightx/2);
+//    var imgcentery = (topy/2 + bottomy/2);
+
+//    var text = document.getElementById("text-view");
+//    var rect2 = text.getBoundingClientRect();
+//    var textleftx = rect2.left + window.scrollX;
+//    var textrightx = rect2.right + window.scrollX;
+//    var texttopy = rect2.top + window.scrollY;
+//    var textbottomy = rect2.bottom + window.scrollY;
+//    var halftextlength= (textrightx - textleftx)/2;
+//    var halftextwidth = (textbottomy - texttopy)/2;
+
+//    console.log('halftextlenght=',halftextlength)
+
+//    var textleftinput = imgcenterx - halftextlength;
+//    var texttopinput = imgcentery - halftextwidth; 
+   
+//    text.style.left= textleftinput + 'px';
+//    text.style.top = texttopinput + 'px';
+
+   
+// }
+
+// function imgout(event){
+//     var element = event.target;
+//     element.classList.remove('blurred');
+//     element.classList.remove('overlay');
+//     document.getElementById("text-view").style.display = "none";
+// }
+
+
+
+
+
+
+function imghover(event) {
+    var element = event.target;
+    var container = element.parentElement;
+    var textView = container.querySelector('.text-view');
+    element.classList.add('blurred');
+    element.classList.add('overlay');
+    textView.style.display = 'flex';
 }
 
-
-
-
-
-
-
-
-
+function imgout(event) {
+    var element = event.target;
+    var container = element.parentElement;
+    var textView = container.querySelector('.text-view');
+    element.classList.remove('blurred');
+    element.classList.remove('overlay');
+    textView.style.display = 'none';
+}
 
 
 
