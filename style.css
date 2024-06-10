@@ -747,7 +747,7 @@ img{
 
 @media only screen and (max-width: 480px) {
   #digimg img{
-   width: 33.33333%;
+   width: 100%;
 }
 }
 
