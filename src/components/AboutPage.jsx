@@ -7,7 +7,7 @@ function AboutPage() {
         <p className="about-kicker">About</p>
         <h1>Anmol Joshi</h1>
         <p className="about-lead">
-          I build thoughtful digital products and fiddle with AI automation.
+          I build thoughtful digital products and work closely with AI automation tools.
         </p>
       </section>
 
